@@ -56,7 +56,7 @@ Open in browser:
 
 `http://SERVER-IP`
 
-###Screenshot
+### Screenshot
 ![LAMP Web Server](screenshots/lamp-webserver-working.png)
 # 2️⃣ Server Monitoring (Prometheus + Grafana)
 
