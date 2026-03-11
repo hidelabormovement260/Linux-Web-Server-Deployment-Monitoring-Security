@@ -55,6 +55,7 @@ echo "Linux Web Server Working" > /var/www/html/index.html
 Open in browser:
 
 `http://SERVER-IP`
+
 ###Screenshot
 ![LAMP Web Server](screenshots/lamp-webserver-working.png)
 # 2️⃣ Server Monitoring (Prometheus + Grafana)
