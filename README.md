@@ -62,45 +62,68 @@ Open in browser:
 
 Installed Prometheus to collect system metrics and Grafana to visualize them.
 
-Monitoring Tools
+## Monitoring Tools
 
-Prometheus
+- Prometheus
+- Node Exporter
+- Grafana
 
-Node Exporter
+## Metrics Monitored
 
-Grafana
+- CPU Usage
+- Memory Usage
+- Disk Usage
+- Network Traffic
+- System Load
+- System Uptime
 
-Metrics Monitored
+---
 
-CPU Usage
+## Node Exporter Metrics
 
-Memory Usage
+Node Exporter exposes Linux system metrics for Prometheus.
 
-Disk Usage
+Access Node Exporter metrics:
 
-Network Traffic
+`http://SERVER-IP:9100/metrics`
 
-System Load
+### Screenshot
 
-System Uptime
+![Node Exporter Metrics](screenshots/node-exporter-metrics.png)
 
-Prometheus Interface
-http://SERVER-IP:9090
-Screenshot
-screenshots/prometheus-targets.png
-Grafana Dashboard
+---
 
-Grafana was configured to use Prometheus as the data source.
+## Prometheus Targets
 
-Dashboard Used:
+Prometheus scrapes metrics from configured targets.
 
-Node Exporter Full Dashboard (ID: 1860)
+Access Prometheus interface:
 
-Grafana URL
+`http://SERVER-IP:9090`
 
-http://SERVER-IP:3000
-Screenshot
-screenshots/grafana-node-exporter-dashboard.png
+Verify that **node_exporter** is listed and showing **UP**.
+
+### Screenshot
+
+![Prometheus Targets](screenshots/prometheus-targets.png)
+
+---
+
+## Grafana Dashboard
+
+Grafana was configured to use **Prometheus as the data source**.
+
+Dashboard used:
+
+`Node Exporter Full Dashboard (ID: 1860)`
+
+Access Grafana:
+
+`http://SERVER-IP:3000`
+
+### Screenshot
+
+![Grafana Dashboard](screenshots/grafana-node-exporter-dashboard.png)
 # 3️⃣ Apache Virtual Hosting
 
 Configured Apache to host multiple websites on a single server using different domain names.
