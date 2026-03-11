@@ -128,27 +128,46 @@ Access Grafana:
 
 Configured Apache to host multiple websites on a single server using different domain names.
 
-Example Domains
+## Example Domains
+
+```
 site1.local
 site2.local
-Directory Structure
+```
+
+## Directory Structure
+
+```
 /var/www/site1
 /var/www/site2
-Example VirtualHost Configuration
+```
+
+## Example VirtualHost Configuration
+
+```apache
 <VirtualHost *:80>
-ServerName site1.local
-DocumentRoot /var/www/site1
+    ServerName site1.local
+    DocumentRoot /var/www/site1
 </VirtualHost>
 
 <VirtualHost *:80>
-ServerName site2.local
-DocumentRoot /var/www/site2
+    ServerName site2.local
+    DocumentRoot /var/www/site2
 </VirtualHost>
-Testing
+```
+
+## Testing
+
+```
 curl http://site1.local
 curl http://site2.local
-Screenshot
-screenshots/apache-virtual-host-test.png
+```
+
+### Screenshot
+
+![Apache Virtual Host Test](screenshots/apache-virtual-host-test.png)
+
+
 # 4️⃣ Linux Server Security Hardening
 
 Implemented multiple security measures.
