@@ -57,7 +57,7 @@ Open in browser:
 http://SERVER-IP
 Screenshot
 screenshots/lamp-webserver-working.png
-2️⃣ Server Monitoring (Prometheus + Grafana)
+# 2️⃣ Server Monitoring (Prometheus + Grafana)
 
 Installed Prometheus to collect system metrics and Grafana to visualize them.
 
@@ -100,7 +100,7 @@ Grafana URL
 http://SERVER-IP:3000
 Screenshot
 screenshots/grafana-node-exporter-dashboard.png
-3️⃣ Apache Virtual Hosting
+# 3️⃣ Apache Virtual Hosting
 
 Configured Apache to host multiple websites on a single server using different domain names.
 
@@ -125,7 +125,7 @@ curl http://site1.local
 curl http://site2.local
 Screenshot
 screenshots/apache-virtual-host-test.png
-4️⃣ Linux Server Security Hardening
+# 4️⃣ Linux Server Security Hardening
 
 Implemented multiple security measures.
 
@@ -133,7 +133,7 @@ Implemented multiple security measures.
 
 Edited SSH configuration file.
 
-vi /etc/ssh/sshd_config
+vim /etc/ssh/sshd_config
 
 Security settings applied:
 
@@ -191,7 +191,7 @@ Expected output:
 Enforcing
 Screenshot
 screenshots/selinux-status.png
-🧠 Skills Demonstrated
+# 🧠 Skills Demonstrated
 
 Linux System Administration
 
@@ -241,7 +241,7 @@ Fail2Ban
 
 SELinux
 
-🎯 Conclusion
+# 🎯 Conclusion
 
 This project demonstrates how to deploy, monitor, and secure a Linux-based web server environment using industry-standard tools.
 
