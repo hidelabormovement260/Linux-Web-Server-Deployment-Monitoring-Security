@@ -51,12 +51,12 @@ mysql --version
 systemctl status httpd
 Test Web Server
 echo "Linux Web Server Working" > /var/www/html/index.html
-
+```
 Open in browser:
 
-http://SERVER-IP
-Screenshot
-screenshots/lamp-webserver-working.png
+`http://SERVER-IP`
+###Screenshot
+![LAMP Web Server](screenshots/lamp-webserver-working.png)
 # 2️⃣ Server Monitoring (Prometheus + Grafana)
 
 Installed Prometheus to collect system metrics and Grafana to visualize them.
