@@ -165,7 +165,9 @@ curl http://site2.local
 
 ### Screenshot
 
-![Apache Virtual Host Test](screenshots/apache-virtual-host-test.png)
+![Apache Virtual Host Test](screenshots/apache-virtual-host-test1.png)
+![Apache Virtual Host Test](screenshots/apache-virtual-host-test2.png)
+![Apache Virtual Host Test](screenshots/apache-virtual-host-test3.png)
 
 
 # 4️⃣ Linux Server Security Hardening
