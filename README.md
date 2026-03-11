@@ -169,31 +169,40 @@ curl http://site2.local
 ![Apache Virtual Host Test](screenshots/apache-virtual-host-test2.png)
 ![Apache Virtual Host Test](screenshots/apache-virtual-host-test3.png)
 
-
 # 4️⃣ Linux Server Security Hardening
 
-Implemented multiple security measures.
+Implemented multiple security measures to improve the security of the Linux web server.
 
-🔐 SSH Hardening
+---
 
-Edited SSH configuration file.
+## 🔐 SSH Hardening
 
+Edited the SSH configuration file to disable insecure login methods.
+
+Edit configuration file:
+
+```bash
 vim /etc/ssh/sshd_config
-
+```
 Security settings applied:
-
+```bash
 PermitRootLogin no
 PasswordAuthentication no
 PermitEmptyPasswords no
-
-Restart SSH:
-
+```
+Restart SSH service:
+```bash
 systemctl restart sshd
-
-Verify:
-
+```
+Verify SSH service:
+```bash
 systemctl status sshd
-Screenshot
+```
+### Screenshot
+![ssh-hardening-verification](screenshots/ssh-hardening-verification.png)
+
+
+
 screenshots/ssh-hardening-verification.png
 🔥 Firewall Configuration
 
