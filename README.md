@@ -1,45 +1,55 @@
-# Linux-Web-Server-Deployment-Monitoring-Security
-📌 Project Overview
+# Linux Web Server Deployment, Monitoring & Security
 
-This project demonstrates how to deploy and secure a production-style Linux web server environment using AlmaLinux.
+## 📌 Project Overview
+
+This project demonstrates how to **deploy, monitor, and secure a production-style Linux web server environment** using **AlmaLinux**.
 
 The setup includes:
 
-LAMP stack deployment
+- LAMP Stack Deployment
+- Infrastructure Monitoring using Prometheus and Grafana
+- Apache Virtual Hosting
+- Linux Server Security Hardening
 
-Infrastructure monitoring using Prometheus and Grafana
+This project showcases **practical Linux System Administration and Monitoring skills**.
 
-Apache Virtual Hosting
+---
 
-Linux Server Security Hardening
+# 🏗 Architecture
 
-This project showcases practical Linux System Administration and Monitoring skills.
+| Component | Tool |
+|-----------|------|
+| Operating System | AlmaLinux |
+| Web Server | Apache |
+| Database | MariaDB |
+| Backend Language | PHP |
+| Monitoring | Prometheus |
+| Visualization | Grafana |
+| Metrics Exporter | Node Exporter |
+| Security | Firewalld, Fail2Ban, SSH Hardening, SELinux |
 
-🏗 Architecture
-Component	Tool
-Operating System	AlmaLinux
-Web Server	Apache
-Database	MariaDB
-Backend Language	PHP
-Monitoring	Prometheus
-Visualization	Grafana
-Metrics Exporter	Node Exporter
-Security	Firewalld, Fail2Ban, SSH Hardening, SELinux
-📦 Project Components
-1️⃣ LAMP Stack Deployment
+---
 
-Installed Apache, MariaDB, and PHP to host web applications.
+# 📦 Project Components
 
-Install packages
+---
+
+# 1️⃣ LAMP Stack Deployment
+
+Installed **Apache, MariaDB, and PHP** to host web applications.
+
+## Install Packages
+
+```bash
 dnf install httpd mariadb-server php php-mysqlnd -y
-Start services
+Start Services
 systemctl enable --now httpd
 systemctl enable --now mariadb
-Verify installation
+Verify Installation
 php -v
 mysql --version
 systemctl status httpd
-Test web server
+Test Web Server
 echo "Linux Web Server Working" > /var/www/html/index.html
 
 Open in browser:
@@ -51,7 +61,7 @@ screenshots/lamp-webserver-working.png
 
 Installed Prometheus to collect system metrics and Grafana to visualize them.
 
-Monitoring tools
+Monitoring Tools
 
 Prometheus
 
@@ -59,21 +69,21 @@ Node Exporter
 
 Grafana
 
-Metrics monitored
+Metrics Monitored
 
-CPU usage
+CPU Usage
 
-Memory usage
+Memory Usage
 
-Disk usage
+Disk Usage
 
-Network traffic
+Network Traffic
 
-System load
+System Load
 
-System uptime
+System Uptime
 
-Prometheus interface
+Prometheus Interface
 http://SERVER-IP:9090
 Screenshot
 screenshots/prometheus-targets.png
@@ -81,7 +91,7 @@ Grafana Dashboard
 
 Grafana was configured to use Prometheus as the data source.
 
-Dashboard used:
+Dashboard Used:
 
 Node Exporter Full Dashboard (ID: 1860)
 
@@ -94,17 +104,18 @@ screenshots/grafana-node-exporter-dashboard.png
 
 Configured Apache to host multiple websites on a single server using different domain names.
 
-Example domains
+Example Domains
 site1.local
 site2.local
-Directory structure
+Directory Structure
 /var/www/site1
 /var/www/site2
-Example VirtualHost configuration
+Example VirtualHost Configuration
 <VirtualHost *:80>
 ServerName site1.local
 DocumentRoot /var/www/site1
 </VirtualHost>
+
 <VirtualHost *:80>
 ServerName site2.local
 DocumentRoot /var/www/site2
@@ -232,4 +243,6 @@ SELinux
 
 🎯 Conclusion
 
-This project demonstrates how to deploy, monitor, and secure a Linux-based web server environment using industry-standard tools. It highlights essential skills required for Linux System Administration and DevOps roles.
+This project demonstrates how to deploy, monitor, and secure a Linux-based web server environment using industry-standard tools.
+
+It highlights core skills required for Linux System Administration and DevOps roles, including web server deployment, monitoring, security hardening, and infrastructure management.
