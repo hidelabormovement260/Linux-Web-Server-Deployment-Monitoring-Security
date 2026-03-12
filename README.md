@@ -221,7 +221,13 @@ Screenshot
 
 ## 🛡 Fail2Ban Intrusion Protection
 
-Installed Fail2Ban to prevent brute-force login attacks.
+Installed **Fail2Ban** to protect the server from brute-force login attacks.
+
+Enable the EPEL repository (required for Fail2Ban):
+```bash
+dnf install epel-release -y
+```
+
 Install Fail2Ban:
 ```bash
 dnf install fail2ban -y
