@@ -203,7 +203,7 @@ systemctl status sshd
 ### Screenshot
 ![ssh-hardening-verification](screenshots/ssh-hardening-verification.png)
 
-🔥 Firewall Configuration
+## 🔥 Firewall Configuration
 
 Configured Firewalld to allow required services.
 ```bash
@@ -216,27 +216,29 @@ Verify firewall rules:
 ```bash
 firewall-cmd --list-all
 ```
+Screenshot
 ![firewall-rules](screenshots/firewall-rules.png)
 
 
-Screenshot
-screenshots/firewall-rules.png
-🛡 Fail2Ban Intrusion Protection
+## 🛡 Fail2Ban Intrusion Protection
 
-Installed Fail2Ban to prevent brute-force attacks.
-
+Installed Fail2Ban to prevent brute-force login attacks.
+Install Fail2Ban:
+```bash
 dnf install fail2ban -y
-
-Start service:
-
+```
+Start and enable service:
+```bash
 systemctl enable --now fail2ban
-
-Check status:
-
+```
+Check Fail2Ban status:
+```bash
 fail2ban-client status
+```
 Screenshot
-screenshots/fail2ban-status.png
-🧩 SELinux Verification
+![fail2ban](screenshots/fail2ban-status.png)
+
+## 🧩 SELinux Verification
 
 Checked SELinux status.
 
