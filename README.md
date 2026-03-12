@@ -258,22 +258,7 @@ Screenshot
 - Linux Security Hardening  
 - Networking & Firewall Configuration  
 - Troubleshooting & Diagnostics  
-```
-
-### Screenshots
-Recommended screenshots are included in this repository.
-```bash
-screenshots/
-│
-├── lamp-webserver-working.png
-├── prometheus-targets.png
-├── grafana-node-exporter-dashboard.png
-├── apache-virtual-host-test.png
-├── ssh-hardening-verification.png
-├── firewall-rules.png
-├── fail2ban-status.png
-└── selinux-status.png
-```
+  ```
 
 # ⚙ Technologies Used
 ```bash
