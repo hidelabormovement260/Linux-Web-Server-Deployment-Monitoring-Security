@@ -219,7 +219,6 @@ firewall-cmd --list-all
 Screenshot
 ![firewall-rules](screenshots/firewall-rules.png)
 
-
 ## 🛡 Fail2Ban Intrusion Protection
 
 Installed Fail2Ban to prevent brute-force login attacks.
@@ -252,46 +251,18 @@ Screenshot
 ![selinux-status](screenshots/selinux-status.png)
 
 # 🧠 Skills Demonstrated
-
+```bash
 - Linux System Administration  
 - Web Server Deployment  
 - Infrastructure Monitoring  
 - Linux Security Hardening  
 - Networking & Firewall Configuration  
 - Troubleshooting & Diagnostics  
-
 ---
 
-# 📷 Screenshots
+### Screenshots
 
 Recommended screenshots included in this repository.
-
-
-
-
-
-
-
-
-
-
-# 🧠 Skills Demonstrated
-
-Linux System Administration
-
-Web Server Deployment
-
-Infrastructure Monitoring
-
-Linux Security Hardening
-
-Networking & Firewall Configuration
-
-Troubleshooting & Diagnostics
-
-📷 Screenshots
-
-Recommended screenshots to include in the repository.
 
 screenshots/
 │
@@ -303,27 +274,21 @@ screenshots/
 ├── firewall-rules.png
 ├── fail2ban-status.png
 └── selinux-status.png
-⚙ Technologies Used
 
-Linux (AlmaLinux)
+---
 
-Apache HTTP Server
+# ⚙ Technologies Used
 
-MariaDB
-
-PHP
-
-Prometheus
-
-Grafana
-
-Node Exporter
-
-Firewalld
-
-Fail2Ban
-
-SELinux
+- Linux (AlmaLinux)
+- Apache HTTP Server
+- MariaDB
+- PHP
+- Prometheus
+- Grafana
+- Node Exporter
+- Firewalld
+- Fail2Ban
+- SELinux
 
 # 🎯 Conclusion
 
