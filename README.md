@@ -258,12 +258,11 @@ Screenshot
 - Linux Security Hardening  
 - Networking & Firewall Configuration  
 - Troubleshooting & Diagnostics  
----
+```
 
 ### Screenshots
-
-Recommended screenshots included in this repository.
-
+Recommended screenshots are included in this repository.
+```bash
 screenshots/
 │
 ├── lamp-webserver-working.png
@@ -274,11 +273,10 @@ screenshots/
 ├── firewall-rules.png
 ├── fail2ban-status.png
 └── selinux-status.png
-
----
+```
 
 # ⚙ Technologies Used
-
+```bash
 - Linux (AlmaLinux)
 - Apache HTTP Server
 - MariaDB
@@ -289,7 +287,7 @@ screenshots/
 - Firewalld
 - Fail2Ban
 - SELinux
-
+```
 # 🎯 Conclusion
 
 This project demonstrates how to deploy, monitor, and secure a Linux-based web server environment using industry-standard tools.
