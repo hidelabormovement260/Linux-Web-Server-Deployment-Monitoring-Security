@@ -250,18 +250,19 @@ Enforcing
 Screenshot
 ![selinux-status](screenshots/selinux-status.png)
 
-# 🧠 Skills Demonstrated
-```bash
-- Linux System Administration  
-- Web Server Deployment  
-- Infrastructure Monitoring  
-- Linux Security Hardening  
-- Networking & Firewall Configuration  
-- Troubleshooting & Diagnostics  
-  ```
+## 🧠 Skills Demonstrated
 
-# ⚙ Technologies Used
-```bash
+- Linux System Administration
+- Web Server Deployment
+- Infrastructure Monitoring
+- Linux Security Hardening
+- Networking & Firewall Configuration
+- Troubleshooting & Diagnostics
+
+---
+
+## ⚙ Technologies Used
+
 - Linux (AlmaLinux)
 - Apache HTTP Server
 - MariaDB
@@ -272,9 +273,11 @@ Screenshot
 - Firewalld
 - Fail2Ban
 - SELinux
-```
-# 🎯 Conclusion
+
+---
+
+## 🎯 Conclusion
 
 This project demonstrates how to deploy, monitor, and secure a Linux-based web server environment using industry-standard tools.
-
+It highlights core skills required for Linux System Administration and DevOps roles, including web server deployment, monitoring, security hardening, and infrastructure management.
 It highlights core skills required for Linux System Administration and DevOps roles, including web server deployment, monitoring, security hardening, and infrastructure management.
