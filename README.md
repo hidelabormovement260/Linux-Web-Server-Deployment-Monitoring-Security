@@ -61,13 +61,81 @@ Open in browser:
 
 # 2️⃣ Server Monitoring (Prometheus + Grafana)
 
-Installed Prometheus to collect system metrics and Grafana to visualize them.
+Installed **Prometheus**, **Node Exporter**, and **Grafana** to monitor the Linux server and visualize system metrics.
+
+---
 
 ## Monitoring Tools
 
 - Prometheus
 - Node Exporter
 - Grafana
+
+---
+
+## Install Node Exporter
+
+Download Node Exporter from GitHub.
+
+```bash
+cd /opt
+wget https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-1.7.0.linux-amd64.tar.gz
+```
+
+Extract the archive:
+
+```bash
+tar -xzf node_exporter-1.7.0.linux-amd64.tar.gz
+```
+
+Start Node Exporter:
+
+```bash
+cd node_exporter-1.7.0.linux-amd64
+./node_exporter &
+```
+
+---
+
+## Install Prometheus
+
+Download Prometheus:
+
+```bash
+cd /opt
+wget https://github.com/prometheus/prometheus/releases/latest/download/prometheus-2.52.0.linux-amd64.tar.gz
+```
+
+Extract the archive:
+
+```bash
+tar -xzf prometheus-2.52.0.linux-amd64.tar.gz
+```
+
+Start Prometheus:
+
+```bash
+cd prometheus-2.52.0.linux-amd64
+./prometheus &
+```
+
+---
+
+## Install Grafana
+
+Install Grafana:
+
+```bash
+dnf install -y https://dl.grafana.com/enterprise/release/grafana-enterprise-10.4.2-1.x86_64.rpm
+```
+
+Start and enable Grafana:
+
+```bash
+systemctl enable --now grafana-server
+```
+
+---
 
 ## Metrics Monitored
 
