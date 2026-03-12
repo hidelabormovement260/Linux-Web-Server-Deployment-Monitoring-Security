@@ -354,4 +354,3 @@ Screenshot
 
 This project demonstrates how to deploy, monitor, and secure a Linux-based web server environment using industry-standard tools.
 It highlights core skills required for Linux System Administration and DevOps roles, including web server deployment, monitoring, security hardening, and infrastructure management.
-It highlights core skills required for Linux System Administration and DevOps roles, including web server deployment, monitoring, security hardening, and infrastructure management.
