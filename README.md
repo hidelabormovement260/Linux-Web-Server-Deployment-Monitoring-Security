@@ -239,17 +239,18 @@ Screenshot
 ![fail2ban](screenshots/fail2ban-status.png)
 
 ## 🧩 SELinux Verification
-
-Checked SELinux status.
-
+Checked SELinux status to ensure security policies are enforced.
+```bash
 getenforce
 sestatus
-
+```
 Expected output:
-
+```bash
 Enforcing
+```
 Screenshot
-screenshots/selinux-status.png
+![selinux-status](screenshots/selinux-status.png)
+
 # 🧠 Skills Demonstrated
 
 Linux System Administration
