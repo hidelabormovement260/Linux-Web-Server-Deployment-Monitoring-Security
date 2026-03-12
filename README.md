@@ -253,6 +253,30 @@ Screenshot
 
 # 🧠 Skills Demonstrated
 
+- Linux System Administration  
+- Web Server Deployment  
+- Infrastructure Monitoring  
+- Linux Security Hardening  
+- Networking & Firewall Configuration  
+- Troubleshooting & Diagnostics  
+
+---
+
+# 📷 Screenshots
+
+Recommended screenshots included in this repository.
+
+
+
+
+
+
+
+
+
+
+# 🧠 Skills Demonstrated
+
 Linux System Administration
 
 Web Server Deployment
