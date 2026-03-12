@@ -58,6 +58,7 @@ Open in browser:
 
 ### Screenshot
 ![LAMP Web Server](screenshots/lamp-webserver-working.png)
+
 # 2️⃣ Server Monitoring (Prometheus + Grafana)
 
 Installed Prometheus to collect system metrics and Grafana to visualize them.
@@ -124,6 +125,7 @@ Access Grafana:
 ### Screenshot
 
 ![Grafana Dashboard](screenshots/grafana-node-exporter-dashboard.png)
+
 # 3️⃣ Apache Virtual Hosting
 
 Configured Apache to host multiple websites on a single server using different domain names.
@@ -201,21 +203,22 @@ systemctl status sshd
 ### Screenshot
 ![ssh-hardening-verification](screenshots/ssh-hardening-verification.png)
 
-
-
-screenshots/ssh-hardening-verification.png
 🔥 Firewall Configuration
 
 Configured Firewalld to allow required services.
-
+```bash
 firewall-cmd --permanent --add-service=http
 firewall-cmd --permanent --add-service=https
 firewall-cmd --permanent --add-service=ssh
 firewall-cmd --reload
-
+```
 Verify firewall rules:
-
+```bash
 firewall-cmd --list-all
+```
+![firewall-rules](screenshots/firewall-rules.png)
+
+
 Screenshot
 screenshots/firewall-rules.png
 🛡 Fail2Ban Intrusion Protection
