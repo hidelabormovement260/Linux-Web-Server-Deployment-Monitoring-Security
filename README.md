@@ -39,9 +39,15 @@ This project showcases **practical Linux System Administration and Monitoring sk
 Installed **Apache, MariaDB, and PHP** to host web applications.
 
 ## Install Packages
+```bash
+dnf install httpd -y
+dnf install mariadb-server -y
+dnf install php -y
+dnf install php-mysqlnd -y
+```
+
 
 ```bash
-dnf install httpd mariadb-server php php-mysqlnd -y
 Start Services
 systemctl enable --now httpd
 systemctl enable --now mariadb
