@@ -55,6 +55,12 @@ dnf install php-mysqlnd -y
 systemctl enable --now httpd
 systemctl enable --now mariadb
 ```
+## Allow HTTP in Firewall
+Because Apache runs on port 80, the firewall must allow it.
+```bash
+firewall-cmd --permanent --add-service=http
+firewall-cmd --reload
+```
 ## Verify Installation
 ```bash
 php -v
@@ -62,8 +68,13 @@ mysql --version
 systemctl status httpd
 ```
 ## Test Web Server
+Create a simple HTML page to verify that Apache is serving web content.
 ```bash
 echo "Welcome to my Linux Web Server Project" > /var/www/html/index.html
+```
+You can also create the file using vim:
+```bash
+vim /var/www/html/index.html
 ```
 Open in browser:
 
