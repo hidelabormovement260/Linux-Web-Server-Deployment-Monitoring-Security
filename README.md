@@ -103,7 +103,7 @@ Download Node Exporter from GitHub.
 
 ```bash
 cd /opt
-wget https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-1.7.0.linux-amd64.tar.gz
+wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
 ```
 
 Extract the archive:
@@ -111,7 +111,6 @@ Extract the archive:
 ```bash
 tar -xzf node_exporter-1.7.0.linux-amd64.tar.gz
 ```
-
 Start Node Exporter:
 
 ```bash
