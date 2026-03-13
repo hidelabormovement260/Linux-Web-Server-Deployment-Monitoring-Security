@@ -256,6 +256,16 @@ site2.local
 ```bash
 systemctl restart httpd
 ```
+## Configure Local DNS (hosts file)
+Edit the hosts file:
+```bash
+vim /etc/hosts
+```
+Add
+```bash
+192.168.233.135 site1.local
+192.168.233.135 site2.local
+```
 ## Testing
 ```
 curl http://site1.local
