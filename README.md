@@ -213,7 +213,11 @@ Dashboard used:
 Access Grafana:
 
 `http://SERVER-IP:3000`
-
+```bash
+default login:
+username: admin
+password: admin
+```
 ### Screenshot
 
 ![Grafana Dashboard](screenshots/grafana-node-exporter-dashboard.png)
