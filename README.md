@@ -225,7 +225,7 @@ password: admin
 
 Configured Apache to host multiple websites on a single server using different domain names.
 
-## Example Domains
+## Example Domain Names
 
 ```
 site1.local
@@ -252,9 +252,11 @@ site2.local
     DocumentRoot /var/www/site2
 </VirtualHost>
 ```
-
+## Reload Apache
+```bash
+systemctl restart httpd
+```
 ## Testing
-
 ```
 curl http://site1.local
 curl http://site2.local
