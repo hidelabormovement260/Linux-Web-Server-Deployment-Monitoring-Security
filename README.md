@@ -40,9 +40,13 @@ Installed **Apache, MariaDB, and PHP** to host web applications.
 
 ## Install Packages
 ```bash
+# Install Apache
 dnf install httpd -y
+# Install MariaDB
 dnf install mariadb-server -y
+# Install PHP
 dnf install php -y
+# Install PHP MySQL driver
 dnf install php-mysqlnd -y
 ```
 
