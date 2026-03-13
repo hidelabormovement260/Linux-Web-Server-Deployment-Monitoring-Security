@@ -46,21 +46,24 @@ dnf install httpd -y
 dnf install mariadb-server -y
 # Install PHP
 dnf install php -y
-# Install PHP MySQL driver
+# Install PHP MySQL Native driver(for PHP-MariaDB connection)
 dnf install php-mysqlnd -y
 ```
 
-
+## Start Services
 ```bash
-Start Services
 systemctl enable --now httpd
 systemctl enable --now mariadb
-Verify Installation
+```
+## Verify Installation
+```bash
 php -v
 mysql --version
 systemctl status httpd
-Test Web Server
-echo "Linux Web Server Working" > /var/www/html/index.html
+```
+## Test Web Server
+```bash
+echo "Welcome to my Linux Web Server Project" > /var/www/html/index.html
 ```
 Open in browser:
 
