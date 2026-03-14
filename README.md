@@ -223,16 +223,18 @@ Configured Apache to host multiple websites on a single server using different d
 site1.local
 site2.local
 ```
-
+## Create Website Directories
+```bash
+mkdir -p /var/www/site1
+mkdir -p /var/www/site2
+```
 ## Directory Structure
-
 ```
 /var/www/site1
 /var/www/site2
 ```
 
 ## Example VirtualHost Configuration
-
 ```apache
 <VirtualHost *:80>
     ServerName site1.local
