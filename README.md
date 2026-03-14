@@ -101,29 +101,23 @@ Step 1: Install wget
 ```bash
 dnf install wget -y
 ```
-Navigate to opt directory
+Step 2: Navigate to the opt directory
 ```bash 
 cd /opt
 ```
-Step 2: Download Node Exporter from GitHub.
+Step 3: Download Node Exporter from GitHub.
 ```bash
 wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
 ```
-
-Extract the archive:
-
+Step 4: Extract the archive:
 ```bash
 tar -xzf node_exporter-1.7.0.linux-amd64.tar.gz
 ```
-Start Node Exporter:
-
+Step 5: Start Node Exporter:
 ```bash
 cd node_exporter-1.7.0.linux-amd64
 ./node_exporter &
 ```
-
----
-
 ## Install Prometheus
 
 Download Prometheus:
