@@ -1,4 +1,4 @@
-# Linux Web Server Deployment, Monitoring & Security
+# Linux Web Server Deployment, Monitoring & Security using LAMP Stack
 
 ## 📌 Project Overview
 
