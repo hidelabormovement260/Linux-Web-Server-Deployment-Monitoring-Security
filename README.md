@@ -94,8 +94,8 @@ Installed **Prometheus**, **Node Exporter**, and **Grafana** to monitor the Linu
 - Prometheus
 - Node Exporter
 - Grafana
-
 ---
+
 ## Install Node Exporter
 Step 1: Install wget
 ```bash
@@ -105,57 +105,51 @@ Step 2: Navigate to the opt directory
 ```bash 
 cd /opt
 ```
-Step 3: Download Node Exporter from GitHub.
+Step 3: Download Node Exporter from GitHub
 ```bash
 wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
 ```
-Step 4: Extract the archive:
+Step 4: Extract the archive
 ```bash
 tar -xzf node_exporter-1.7.0.linux-amd64.tar.gz
 ```
-Step 5: Start Node Exporter:
+Step 5: Start Node Exporter
 ```bash
 cd node_exporter-1.7.0.linux-amd64
 ./node_exporter &
 ```
+---
+
 ## Install Prometheus
-
-Download Prometheus:
-
-```bash
+Step 1: Navigate to the opt directory
+```bash 
 cd /opt
+```
+Step 2:Download Prometheus from GitHub
+```bash
 wget https://github.com/prometheus/prometheus/releases/download/v2.52.0/prometheus-2.52.0.linux-amd64.tar.gz
 ```
-
-Extract the archive:
-
+Step 3:Extract the archive:
 ```bash
 tar -xzf prometheus-2.52.0.linux-amd64.tar.gz
 ```
-
-Start Prometheus:
-
+Step 4:Start Prometheus:
 ```bash
 cd prometheus-2.52.0.linux-amd64
 ./prometheus &
 ```
-
 ---
 
 ## Install Grafana
 
-Install Grafana:
-
+Step 1: Install the Grafana RPM package from Grafana Labs
 ```bash
 dnf install -y https://dl.grafana.com/enterprise/release/grafana-enterprise-10.4.2-1.x86_64.rpm
 ```
-
-Start and enable Grafana:
-
+Step 2:Start and enable Grafana
 ```bash
 systemctl enable --now grafana-server
 ```
-
 ---
 
 ## Metrics Monitored
