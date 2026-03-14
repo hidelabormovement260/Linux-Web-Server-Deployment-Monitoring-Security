@@ -97,14 +97,16 @@ Installed **Prometheus**, **Node Exporter**, and **Grafana** to monitor the Linu
 
 ---
 ## Install Node Exporter
-
-### step 1: Install wget
+Step 1: Install wget
 ```bash
 dnf install wget -y
 ```
+Navigate to opt directory
+```bash 
+cd /opt
+```
 Step 2: Download Node Exporter from GitHub.
 ```bash
-cd /opt
 wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
 ```
 
