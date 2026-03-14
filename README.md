@@ -146,7 +146,7 @@ Step 1: Install the Grafana RPM package from Grafana Labs
 ```bash
 dnf install -y https://dl.grafana.com/enterprise/release/grafana-enterprise-10.4.2-1.x86_64.rpm
 ```
-Step 2:Start and enable Grafana
+Step 2: Start and enable Grafana service
 ```bash
 systemctl enable --now grafana-server
 ```
